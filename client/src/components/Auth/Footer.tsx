@@ -11,7 +11,7 @@ function Footer({ startupConfig }: { startupConfig: TStartupConfig | null | unde
 
   const privacyPolicyRender = privacyPolicy?.externalUrl && (
     <a
-      className="text-sm text-green-600 underline decoration-transparent transition-all duration-200 hover:text-green-700 hover:decoration-green-700 focus:text-green-700 focus:decoration-green-700 dark:text-green-500 dark:hover:text-green-400 dark:hover:decoration-green-400 dark:focus:text-green-400 dark:focus:decoration-green-400"
+      className="text-sm text-amber-600 underline decoration-transparent transition-all duration-200 hover:text-amber-700 hover:decoration-amber-700 focus:text-amber-700 focus:decoration-amber-700 dark:text-green-500 dark:hover:text-amber-400 dark:hover:decoration-amber-400 dark:focus:text-amber-400 dark:focus:decoration-amber-400"
       href={privacyPolicy.externalUrl}
       // Removed for WCAG compliance
       // target={privacyPolicy.openNewTab ? '_blank' : undefined}
@@ -23,7 +23,7 @@ function Footer({ startupConfig }: { startupConfig: TStartupConfig | null | unde
 
   const termsOfServiceRender = termsOfService?.externalUrl && (
     <a
-      className="text-sm text-green-600 underline decoration-transparent transition-all duration-200 hover:text-green-700 hover:decoration-green-700 focus:text-green-700 focus:decoration-green-700 dark:text-green-500 dark:hover:text-green-400 dark:hover:decoration-green-400 dark:focus:text-green-400 dark:focus:decoration-green-400"
+      className="text-sm text-amber-600 underline decoration-transparent transition-all duration-200 hover:text-amber-700 hover:decoration-amber-700 focus:text-amber-700 focus:decoration-amber-700 dark:text-amber-500 dark:hover:text-amber-400 dark:hover:decoration-amber-400 dark:focus:text-amber-400 dark:focus:decoration-amber-400"
       href={termsOfService.externalUrl}
       // Removed for WCAG compliance
       // target={termsOfService.openNewTab ? '_blank' : undefined}
@@ -37,7 +37,7 @@ function Footer({ startupConfig }: { startupConfig: TStartupConfig | null | unde
     <div className="align-end m-4 flex justify-center gap-2" role="contentinfo">
       {privacyPolicyRender}
       {privacyPolicyRender && termsOfServiceRender && (
-        <div className="border-r-[1px] border-gray-300 dark:border-gray-600" />
+        <div className="border-r-[1px] border-amber-300 dark:border-amber-600" />
       )}
       {termsOfServiceRender}
     </div>
